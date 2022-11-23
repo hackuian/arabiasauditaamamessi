@@ -40,7 +40,7 @@ Route::get('/ingresar', function () {
     return view('ingresar');
 });
 
-Route::get('/cris', function () {
+Route::get('/nico', function () {
     return view('ingresar');
 });
 
