@@ -57,6 +57,11 @@ Route::get('/crearEquipos', function () {
 Route::get('/admin/torneo/creartorneo', function () {
     return view('admin/torneo/creartorneo');
 });
+
+Route::get('/admin/ambientes/cargarambiente', function () {
+    return view('/admin/ambientes/cargarambiente');
+});
+
 Route::get('/', function () {
     return view('inicio');
 });
