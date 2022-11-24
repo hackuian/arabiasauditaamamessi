@@ -1,0 +1,183 @@
+/** TORNEO **/
+
+/* menu */
+/* menu */
+.menucat{
+    text-align: center;
+    right: 500;
+  }
+  
+  #menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align: center;
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    background-color:#3683ff;
+    text-align: center;
+  
+   }
+   
+   /* enlaces del menu */
+   
+   #menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-align: center;
+  
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+    text-align: center;
+  
+   }
+   
+   /* efecto al pasar el ratón por los items del menu */
+   
+   #menu ul li:hover {
+    background:#5b78a7;
+    text-align: center;
+  
+   }
+  
+  #menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+    text-align: center;
+  
+   }
+   
+   /* items del menu desplegable */
+   
+   #menu ul ul li {
+    float:none;
+    width:150px;
+    text-align: center;
+  
+   }
+   
+   /* enlaces de los items del menu desplegable */
+   
+   #menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+    text-align: center;
+  
+   }
+   
+   /* items del menu desplegable al pasar el ratón */
+   
+   #menu ul li:hover > ul {
+    display:block;
+    
+   }
+   
+  
+  
+  
+  .posiciones{
+   
+    font-size: 45px;
+    color: #2848ff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 30%;
+    height: 10%;
+    text-align:center;
+  }
+  
+  .playoffs{
+  
+    font-size: 45px;
+    color: #2848ff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 30%;
+    height: 10%;
+    text-align:center;
+  }
+  
+  
+  
+  h1,p{
+    font-family:sans-serif;
+    width:500px;
+    margin:150px auto;
+    text-align:center;
+    color:rgb(0, 0, 0);
+  }
+  p{
+    width:500px;
+  }
+  table{
+    width:720px;
+    margin:0 auto;
+    color:white;
+    text-align:center;
+  }
+  tr{
+    cursor:pointer;
+    size: 30px;
+  }
+  .destacado{
+    font-family:Arial;
+    font-weight:bold;
+    font-size: 30px;
+    background-color:#ffffff;
+  }
+  
+  body{
+    background-color:#0F3E76;
+  }
+  /* Impares */
+  table tr:nth-child(odd){
+    background-color:#2fb3ff;
+    font-size: 20px;
+  }
+  
+  table tr:nth-child(odd):hover{
+    color:black;
+    background-color:#005eaa;
+  }
+  /* Pares */
+  table tr:nth-child(even){
+    background-color:#2fb3ff;
+    font-size: 20px;
+  }
+  
+  table tr:nth-child(even):hover{
+    color:black;
+    background-color:#005eaa;
+  }
+  
+  .imgplayoff{
+    text-align:center;
+  }
+  
+  .navtor{
+  
+    text-align:center;
+  
+  }
+  
+  
+  /** FIN TORNEO **/

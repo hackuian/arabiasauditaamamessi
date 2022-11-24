@@ -62,9 +62,17 @@ Route::get('/admin/ambientes/cargarambiente', function () {
     return view('/admin/ambientes/cargarambiente');
 });
 
+Route::get('/admin/torneo/crearpartido', function () {
+    return view('/admin/torneo/crearpartido');
+});
+
 Route::get('/', function () {
     return view('inicio');
 });
 Route::get('/inicio', function () {
     return view('inicio');
+});
+
+Route::get('/Usuario/fixture', function () {
+    return view('/Usuario/fixture');
 });

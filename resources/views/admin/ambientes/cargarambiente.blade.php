@@ -26,7 +26,7 @@
             <br>
             <button type="submit" class="btn btn-primary">Registrar</button>
         </form> 
-
+    
 @endsection
 @section('script')
 @endsection

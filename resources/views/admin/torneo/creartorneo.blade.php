@@ -159,6 +159,8 @@
 							<div class="col-md-6">
 								<a href="/" class="btn btn-primary">Cancelar</a>
 							</div>
+							<br>
+							<br>
 						</div>
 					</div>
 				</div>
