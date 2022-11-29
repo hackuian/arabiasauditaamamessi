@@ -73,6 +73,10 @@ Route::get('/inicio', function () {
     return view('inicio');
 });
 
-Route::get('/Usuario/fixture', function () {
-    return view('/Usuario/fixture');
+Route::get('/Usuario/ResultadosLiga', function () {
+    return view('/Usuario/ResultadosLiga');
+});
+
+Route::get('/Usuario/ResultadosCopa', function () {
+    return view('/Usuario/ResultadosCopa');
 });

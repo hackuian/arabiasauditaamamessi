@@ -10,7 +10,7 @@
 @endsection
 
     @section('contenido')
-
+    
     <h1>Crear Partido</h1>
 
     <form>
