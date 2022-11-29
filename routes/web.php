@@ -80,3 +80,4 @@ Route::get('/ResultadosLiga', function () {
 Route::get('/ResultadosCopa', function () {
     return view('/ResultadosCopa');
 });
+
