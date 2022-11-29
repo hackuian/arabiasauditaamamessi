@@ -1,3 +1,4 @@
+@extends('plantilla.main')
 
 @section('hojasEstilo')
 	<link rel="stylesheet" href="plugins/bootstrap-datetimepicker-4.17.47/css/bootstrap-datetimepicker.min.css">
@@ -19,18 +20,10 @@
 
 @endsection
 
-<body>
-  <header class="hero">
-    <div class="hero-wrap">
-     <p class="intro" id="intro">flexbox</p>
-     <h1 id="headline">Tournament</h1>
-     <p class="year"><i class="fa fa-star"></i> 2015 <i class="fa fa-star"></i></p>
-     <p>Ballin' Outta Control</p>
-   </div>
-  </header>
+@section('contenido')
 
 
-  <section id="bracket">
+
   <div class="container">
   <div class="split split-one">
     <div class="round round-one current">
@@ -199,7 +192,7 @@
     </div>  <!-- END ROUND ONE -->                  
   </div>
   </div>
-  </section>
+
   <section class="share">
       <div class="share-wrap">
         <a class="share-icon" href="https://twitter.com/_joebeason"><i class="fa fa-twitter"></i></a>
@@ -207,3 +200,7 @@
         <a class="share-icon" href="#"><i class="fa fa-envelope"></i></a>
       </div>
   </section>
+
+@endsection
+@section('script')
+@endsection
