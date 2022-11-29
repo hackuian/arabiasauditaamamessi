@@ -46,6 +46,7 @@ class CategoriasController extends Controller
         
         return redirect()->route('categorias.create')-> with('Success','Agregado con exito!');
     }
+    
 
     /**
      * Display the specified resource.

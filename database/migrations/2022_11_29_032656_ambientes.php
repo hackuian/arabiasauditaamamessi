@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoriasTable extends Migration
+class Ambientes extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,16 @@ class CreateCategoriasTable extends Migration
      */
     public function up()
     {
-        Schema::create('categorias', function (Blueprint $table) {
-            $table->bigIncrements('id_categ');
-            $table->string('nombre_categ');
-            $table->integer('ano_nacimiento_minimo');
-            $table->integer('ano_nacimiento_maxima');
+        Schema::create('ambiente', function (Blueprint $table) {
+            $table->bigIncrements('id_ambiente');
+            $table->String('nombre_ambiente');
+            $table->integer('id_escenario');
+
+              
             $table->timestamps();
         });
     }
 
-    
     /**
      * Reverse the migrations.
      *
@@ -30,6 +30,6 @@ class CreateCategoriasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categorias');
+        //
     }
 }
