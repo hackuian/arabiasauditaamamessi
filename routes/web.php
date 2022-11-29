@@ -32,7 +32,7 @@ Route::get('/jugadoresedit', [JugadoresController::class,'edit']) ->name('jugado
 Route::get('administrador/categoriascrear', [CategoriasController::class,'create']) ->name('categorias.create'); 
 Route::post('administrador/categoriasstore', [CategoriasController::class,'store']) ->name('categorias.store');
 
-
+Route::get('administrador/arbitroscrear', [ArbitrosController::class,'create']) ->name('arbitros.create');
 
 
 
@@ -43,9 +43,6 @@ Route::get('/ingresar', function () {
 Route::get('/nico', function () {
     return view('ingresar');
 });
-
-
-
 
 
 
@@ -80,3 +77,4 @@ Route::get('/ResultadosLiga', function () {
 Route::get('/ResultadosCopa', function () {
     return view('/ResultadosCopa');
 });
+
