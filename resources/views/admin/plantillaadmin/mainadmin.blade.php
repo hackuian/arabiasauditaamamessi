@@ -9,7 +9,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
     <title>Sistema de administracion de Maxibasquet </title>
-
+    @yield('hojasEstilo')
     <!-- Bootstrap -->
     <link href="../admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -61,24 +61,61 @@
                   <li><a><i class="fa-solid fa-user"></i> Jugadores <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="../administrador/jugadorescrear"><i class="fa-solid fa-user-plus"></i> Crear Jugador</a></li>
-                      <li><a href="../administrador/jugadoreseditar"><i class="fa-solid fa-user-pen"></i> Editar Jugador</a></li>
+                      <li><a href="../administrador/jugadoresedit"><i class="fa-solid fa-user-pen"></i> Editar Jugador</a></li>
                       <li><a href="../administrador/jugadoreseliminar"><i class="fa-solid fa-user-xmark"></i> Eliminar Jugador</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa-solid fa-users"></i> Equipo <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="form.html"><i class="fa-solid fa-users-gear"></i> Completar datos del Equipo</a></li>
+                      <li><a href="../administrador/editarequipo"><i class="fa-solid fa-users-gear"></i> Completar datos del Equipo</a></li>
                       
                     </ul>
                   </li>
 
+                  
                   <li><a><i class="fa-solid fa-users"></i> Categorias <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="../administrador/categoriascrear"><i class="fa-solid fa-users-gear"></i> Crear categoria</a></li>
                       
                     </ul>
                   </li>
+
+                  <li><a><i class="fa-solid fa-user"></i> Torneos <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../administrador/torneocrear"><i class="fa-solid fa-user-plus"></i> Crear Torneo</a></li>
+                      <li><a href="../administrador/torneoedit"><i class="fa-solid fa-user-pen"></i> Editar torneo</a></li>
+                      <li><a href="../administrador/torneoeliminar"><i class="fa-solid fa-user-xmark"></i> Eliminar torneo</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa-solid fa-user"></i> Arbitros <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../administrador/arbitroscrear"><i class="fa-solid fa-user-plus"></i> Crear arbitro</a></li>
+                      <li><a href="../administrador/arbitrosedit"><i class="fa-solid fa-user-pen"></i> Editar arbitro</a></li>
+                      <li><a href="../administrador/arbitroseliminar"><i class="fa-solid fa-user-xmark"></i> Eliminar arbitro</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa-solid fa-user"></i> Escenarios<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../administrador/escenarioscrear"><i class="fa-solid fa-user-plus"></i> Crear escenarios</a></li>
+                      <li><a href="../administrador/escenariosedit"><i class="fa-solid fa-user-pen"></i> Editar escenarios</a></li>
+                      <li><a href="../administrador/escenarioseliminar"><i class="fa-solid fa-user-xmark"></i> Eliminar escenarios</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa-solid fa-user"></i> Partidos<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="../administrador/partidoscrear"><i class="fa-solid fa-user-plus"></i> Crear partidos</a></li>
+                      <li><a href="../administrador/partidosedit"><i class="fa-solid fa-user-pen"></i> Editar partidos</a></li>
+                      <li><a href="../administrador/partidoseliminar"><i class="fa-solid fa-user-xmark"></i> Eliminar partidos</a></li>
+                    </ul>
+                  </li>
+                
+                
+                
+                
                 </ul>
+
+
               </div>
 
             </div>
@@ -122,7 +159,7 @@
         <!-- /PAGE CONTENT  -->
       </div>
     </div>
-
+    @yield('script')
     <!-- jQuery -->
     <script src="../admin/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->

@@ -24,15 +24,22 @@ Route::get('/administrador', function () {
 });
 Route::get('/jugadoreslista', [JugadoresController::class,'index']) ->name('jugadores.index');
 Route::get('administrador/jugadorescrear', [JugadoresController::class,'create']) ->name('jugadores.create');
-Route::post('administrador/jugadoresstor', [JugadoresController::class,'store']) ->name('jugadores.store');
-Route::get('administrador/jugadoreseliminar', [JugadoresController::class,'show']) ->name('jugadores.show');
-Route::get('administrador/jugadoreseditar', [JugadoresController::class,'edit']) ->name('jugadores.edit');
-Route::get('/jugadoresedit', [JugadoresController::class,'edit']) ->name('jugadores.edit');
+Route::post('administrador/jugadorescrear', [JugadoresController::class,'create']) ->name('jugadores.create');
+Route::post('administrador/jugadoresstore', [JugadoresController::class,'store']) ->name('jugadores.store');
+
+Route::get('administrador/jugadoreseliminar', [JugadoresController::class,'destroy']) ->name('jugadores.destroy');
+Route::delete('administrador/jugadoreseliminar/{id}', [JugadoresController::class,'destroy2']) ->name('jugadores.destroy2');
+Route::get('administrador/jugadoreshow', [JugadoresController::class,'show']) ->name('jugadores.show');
+
+
+Route::get('administrador/jugadoresedit', [JugadoresController::class,'edit']) ->name('jugadores.edit');
+Route::get('administrador/jugadoreseditar/{id}', [JugadoresController::class,'editar']) ->name('jugadores.editar');
+Route::put('administrador/jugadoresupdate/{id}', [JugadoresController::class,'update']) ->name('jugadores.update');
 
 Route::get('administrador/categoriascrear', [CategoriasController::class,'create']) ->name('categorias.create'); 
 Route::post('administrador/categoriasstore', [CategoriasController::class,'store']) ->name('categorias.store');
 
-Route::get('administrador/arbitroscrear', [ArbitrosController::class,'create']) ->name('arbitros.create');
+
 
 
 
@@ -43,6 +50,9 @@ Route::get('/ingresar', function () {
 Route::get('/nico', function () {
     return view('ingresar');
 });
+
+
+
 
 
 
@@ -77,4 +87,3 @@ Route::get('/ResultadosLiga', function () {
 Route::get('/ResultadosCopa', function () {
     return view('/ResultadosCopa');
 });
-
