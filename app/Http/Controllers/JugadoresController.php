@@ -1,19 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Jugadores;
 use App\Usuarios;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+
 class JugadoresController extends Controller
 {
    
     public function index()
     {
         //pagina de inicio
-        $datos = Usuarios::all();
+        //$datos = Usuarios::all();
+        $datos = Usuarios::where('tipo_usuario', 1)->get();
         return view('jugadoreslista', compact('datos'));
 
     }
@@ -76,7 +76,8 @@ class JugadoresController extends Controller
     public function edit(Jugadores $jugadores)
     {
        
-        $datos = Usuarios::all();
+        //$datos = Usuarios::all();
+        $datos = Usuarios::where('tipo_usuario', 1)->get();
         return view('/admin/jugador/editarjugador',compact('datos'));
     }
 
@@ -127,7 +128,8 @@ class JugadoresController extends Controller
 
     public function destroy(Jugadores $jugadores)
     {
-        $datos = Usuarios::all();
+        //$datos = Usuarios::all();
+        $datos = Usuarios::where('tipo_usuario', 1)->get();
         return view('/admin/jugador/eliminarjugador',compact('datos'));
     }
     public function destroy2($id)

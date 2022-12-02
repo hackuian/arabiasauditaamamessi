@@ -5,13 +5,13 @@
 @section('contenido')
 	<div class="col-md-10 col-md-offset-1 panel panel-default">
 		<header class="text-center">
-			<h1>Registro Jugadores</h1>
+			<h1>Registro Arbitros</h1>
 		</header>
 
 		
         
         <div class="col-md-8 col-md-offset-2">
-			<form class="card-block"  action="{{ route('jugadores.store')}}"  method="POST">
+			<form class="card-block"  action="{{ route('arbitros.store')}}"  method="POST">
                 @csrf
 				<div class="panel panel-default">
                         
@@ -25,7 +25,7 @@
 
 
 					
-                <h3>Datos del Jugadores</h3>
+                <h3>Datos del Arbitro</h3>
                     <div class="panel-body">
 		                <form >
                         <div class="form-group">
@@ -50,8 +50,8 @@
 
 						</div>
                         <div class="form-group">
-							<label for="nro_camiseta">Numero de Camiseta</label>
-		                    <input type="number" class="form-control" id="numero" name="nro_camiseta" placeholder="1-99" value="{{ old('apellidos') }}">
+							<label for="nro_camiseta"></label>
+		                    <input  hidden type="number" class="form-control" id="numero" name="nro_camiseta" placeholder="1-99" value="1">
 
 						</div>
                         <div class="form-group">
@@ -59,29 +59,23 @@
 		                    <input hidden type="number" class="form-control" id="id_categoria" name="id_categoria" placeholder="1" value="1">
 
 						</div>
-                        
                         <div class="form-group">
-							<label for="id_categoria"></label>
-		                    <input  hidden type="number" class="form-control" id="id_categoria" name="id_categoria" placeholder="1" value="1">
-
+							<label for="tipo_usuario"></label>
+		                    <input  hidden type="text" class="form-control" id="tipo_usuario" name="tipo_usuario"  value="6">
 						</div>
+                        
                         <div class="form-group">
 							<label for="habilitado"></label>
 		                    <input  hidden type="text" class="form-control" id="habilitado" name="habilitado" placeholder="1" value="1">
-
 						</div>
+
+
                         <div class="form-group">
-							<label for="posicion">Posicion de Juego</label>
-                            <select class="form-control" name="posicion">
-								<option value="" disabled selected>Seleccione uno porfavor</option>
-								<option value="1">Base</option>
-                                <option value="2">Alero</option>
-                                <option value="3">Pivot</option>
-                                <option value="4">Ala-Base</option>
-                                <option value="5">Ala-Pivot</option>
-                                <option value="6">Base-Pivot</option>
-							</select>
-					    </div>
+							<label for="posicion"></label>
+		                    <input  hidden type="text" class="form-control" id="posicion" name="posicion" placeholder="1" value="1">
+						</div>
+                        
+                       
 
 						<div class="form-group">
 							<div class="row">
@@ -110,12 +104,8 @@
    
                         <div class="form-group">
 		                    <label for="celular">Celular</label><br>
-		                     <form id="celular" onsubmit="process(event)">
-                                
-                                <input id="celular" type="tel" name="celular" placeholder="777 12345"/>
-                                
-                             </form>
-                             <div class="alert alert-info" style="display: none;"></div>
+		                    <input id="celular" type="tel" name="celular" placeholder="777 12345"/>
+                        </div>
 
          
                             <div class="form-group">
@@ -361,8 +351,8 @@
                         </div>
                                         
                         <div class="form-group">
-                            <label for="id_equipo">equipo</label>
-                            <input type="text" class="form-control" id="id_equipo" name="id_equipo" placeholder=" Equipo" value="{{ old('nombre') }}">
+                            <label for="id_equipo"></label>
+                            <input hidden type="text" class="form-control" id="id_equipo" name="id_equipo" placeholder=" Equipo" value="2">
                         </div>
 
                         <div class="panel-footer">
