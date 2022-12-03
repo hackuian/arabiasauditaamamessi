@@ -113,6 +113,8 @@ Route::get('administrador/categoriascrear', [CategoriasController::class,'create
 Route::post('administrador/categoriasstore', [CategoriasController::class,'store']) ->name('categorias.store');
 
 
+Route::get('/admin', 'Admin\HomeController@index')->name('admin.home');
+Route::resource('/admin/convocatoria', 'Admin\FileController')->names('admin.convocatoria');
 
 
 
@@ -149,10 +151,11 @@ Route::get('/admin/torneo/crearpartido', function () {
 Route::get('/', function () {
     return view('inicio');
 });
+
+
 Route::get('/inicio', function () {
     return view('inicio');
 });
-
 Route::get('/ResultadosLiga', function () {
     return view('/ResultadosLiga');
 });

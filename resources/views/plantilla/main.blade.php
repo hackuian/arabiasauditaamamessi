@@ -39,6 +39,17 @@
                                 <li><a href="/preregistro">Preregistro</a></li>
                                 <li><a href="/documentacion">Documentacion</a></li>
                                 <li><a href="/contactos">Contactos</a></li>
+
+                                <li><a href="{{route('admin.convocatoria.index')}}">Convocatoria</a>
+                                    <ul class="submenu ">
+                                        <li><a href="{{route('admin.convocatoria.create')}}">Crear Convocatoria</a></li>
+                                        <li><a href="{{route('admin.convocatoria.index')}}">Ver Convocatoria</a></li>
+
+                                        
+                                    </ul>
+                                
+                                </li>
+                                
                                 <li><a href="/administrador">Ingresar</a></li>
                             </ul>
                         </div>
